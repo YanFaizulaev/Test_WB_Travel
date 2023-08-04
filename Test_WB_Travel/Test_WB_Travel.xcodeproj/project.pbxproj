@@ -13,6 +13,8 @@
 		CE78FAB72A7CEDF50052B601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE78FAB52A7CEDF50052B601 /* Main.storyboard */; };
 		CE78FAB92A7CEDF70052B601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE78FAB82A7CEDF70052B601 /* Assets.xcassets */; };
 		CE78FABC2A7CEDF70052B601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE78FABA2A7CEDF70052B601 /* LaunchScreen.storyboard */; };
+		CE78FAC72A7D07F10052B601 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78FAC62A7D07F10052B601 /* CollectionCell.swift */; };
+		CE78FACA2A7D08580052B601 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78FAC92A7D08580052B601 /* ModelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE78FAB82A7CEDF70052B601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE78FABB2A7CEDF70052B601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE78FABD2A7CEDF70052B601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE78FAC62A7D07F10052B601 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		CE78FAC92A7D08580052B601 /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CE78FAC32A7CF6220052B601 /* Application */,
+				CE78FAC82A7D08370052B601 /* Model */,
 				CE78FAC42A7CF65C0052B601 /* MainModule */,
 				CE78FAC52A7CF7260052B601 /* Helpers */,
 				CE78FABD2A7CEDF70052B601 /* Info.plist */,
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CE78FAB32A7CEDF50052B601 /* MainController.swift */,
+				CE78FAC62A7D07F10052B601 /* CollectionCell.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				CE78FABA2A7CEDF70052B601 /* LaunchScreen.storyboard */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE78FAC82A7D08370052B601 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE78FAC92A7D08580052B601 /* ModelCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				CE78FAB42A7CEDF50052B601 /* MainController.swift in Sources */,
 				CE78FAB02A7CEDF50052B601 /* AppDelegate.swift in Sources */,
 				CE78FAB22A7CEDF50052B601 /* SceneDelegate.swift in Sources */,
+				CE78FACA2A7D08580052B601 /* ModelCell.swift in Sources */,
+				CE78FAC72A7D07F10052B601 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

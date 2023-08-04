@@ -20,9 +20,70 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        var viewController = UIViewController()
-            viewController = MainController()
-        window.rootViewController = viewController
+        window.rootViewController = UINavigationController(
+            rootViewController: MainController(travelling: [
+                ModelCell(
+                    id: UUID(),
+                    imageTravel: "wbTravel",
+                    departureCity: "Москва",
+                    arrivalCity: "Тайланд",
+                    modeOfTravel: "train.side.front.car",
+                    departureDate: "01.08.2023",
+                    returnDate: "12.08.2023",
+                    price: "2740 ₽",
+                    addToFavorites: false,
+                    available: true
+                ),
+                ModelCell(
+                    id: UUID(),
+                    imageTravel: "wbTravel",
+                    departureCity: "Клинцы",
+                    arrivalCity: "Бали",
+                    modeOfTravel: "airplane",
+                    departureDate: "01.08.2023",
+                    returnDate: "12.08.2023",
+                    price: "5430 ₽",
+                    addToFavorites: false,
+                    available: true
+                ),
+                ModelCell(
+                    id: UUID(),
+                    imageTravel: "wbTravel",
+                    departureCity: "Тверь",
+                    arrivalCity: "Минс",
+                    modeOfTravel: "bus",
+                    departureDate: "01.08.2023",
+                    returnDate: "12.08.2023",
+                    price: "8430 ₽",
+                    addToFavorites: false,
+                    available: true
+                ),
+                ModelCell(
+                    id: UUID(),
+                    imageTravel: "wbTravel",
+                    departureCity: "Клинцы",
+                    arrivalCity: "Тбилиси",
+                    modeOfTravel: "car",
+                    departureDate: "01.08.2023",
+                    returnDate: "12.08.2023",
+                    price: "1740 ₽",
+                    addToFavorites: false,
+                    available: true
+                ),
+                ModelCell(
+                    id: UUID(),
+                    imageTravel: "wbTravel",
+                    departureCity: "Саратов",
+                    arrivalCity: "Бали",
+                    modeOfTravel: "airplane",
+                    departureDate: "01.08.2023",
+                    returnDate: "12.08.2023",
+                    price: "4330 ₽",
+                    addToFavorites: false,
+                    available: true
+                ),
+            ])
+        )
         
         self.window = window
         window.makeKeyAndVisible()
